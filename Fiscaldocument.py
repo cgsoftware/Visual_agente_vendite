@@ -31,7 +31,7 @@ class FiscalDocHeader(osv.osv):
             banca_cliente = part.bank_ids[0].bank.id
         else:
             banca_cliente = False
-        #import pdb;pdb.set_trace()
+
         val = {
             'partner_indfat_id': addr['invoice'],
             'partner_indcons_id': addr['delivery'],
